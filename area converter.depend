@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1615906250 source:c:\users\janhacker\desktop\area converter program in c\area converter\main.c
+	<stdio.h>
+	<stdlib.h>
+
