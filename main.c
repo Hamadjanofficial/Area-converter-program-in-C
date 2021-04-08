@@ -38,12 +38,13 @@ int main()
     }
     if(convertfrom==1 && convertto==2){
         printf("\n \t\t\t \t ********************");
-        float result=value/10.764/2;
-        printf("\n \n \t\t\t{ %.1f Square Foot = %.1f Meter }\n \n ",value,result);
+        float result=value/10.764;
+        float result2=sqrt(result);
+        printf("\n \n \t\t\t{ %.1f Square Foot = %.1f Meter }\n \n ",value,result2);
     }
     if(convertfrom==1 && convertto==3){
         printf("\n \t\t\t \t ********************");
-        float result=value*144/2;
+        float result=sqrt(value*144);
         printf("\n \n \t\t\t{ %.1f Square Foot = %.1f Inches }\n \n ",value,result);
     }
 //SQUARE FOOT ENDS
@@ -51,8 +52,9 @@ int main()
 //METER START
     if(convertfrom==2 && convertto==1){
         printf("\n \t\t\t \t ********************");
-        float result=value*2*10.764;
-        printf("\n \n \t\t\t{ %.1f Meters = %.1f Square Foot }\n \n ",value,result);
+        float result=value*3.28084;
+        float result2=result*result;
+        printf("\n \n \t\t\t{ %.1f Meters = %.1f Square Foot }\n \n ",value,result2);
     }
     if(convertfrom==2 && convertto==2){
         printf("\n \t\t\t \t ********************");
@@ -68,7 +70,7 @@ int main()
 //INCH START
   if(convertfrom==3 && convertto==1){
         printf("\n \t\t\t \t ********************");
-        float result=value*2/144;
+        float result=value*value/144;
         printf("\n \n \t\t\t{ %.1f Inches = %.1f Square Foot }\n \n ",value,result);
     }
   if(convertfrom==3 && convertto==2){
